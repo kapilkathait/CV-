@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapil Kathait - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Kapil Kathait</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button id ="themeToggle"></button>
+                   </button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Computer Science Engineering graduate skilled in technologies to solve complex problems. Eager to contribute to a dynamic team environment, showcasing self-motivation and a commitment to continuous learning for professional growth.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C/C++</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>OOPS</li>
+                <li>Node.js</li>
+                <li>Php</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Food Delivery App</h3>
+                <p>- Built a responsive food delivery web application using HTML, CSS, ReactJS, and Parcel bundler for efficient development and performance.<br>
+                   - Integrated the Swiggy API to fetch and display real-time restaurant and menu data dynamically.<br>
+                    - Searching, filtering, and sorting features added for an enhanced user experience.<br>
+                    - Utilized ReactJS components and hooks for state management and modular architecture..</p>
+            </div>
+            <div class="project">
+                <h3>E-commerce Site</h3>
+                <p>- Developed using HTML, CSS, Bootstrap.js, Node.js, MySQL<br>
+                    - Incorporates smart recommendations for personalized product suggestions<br>
+                    - Addresses the real-world problem of finding the best products for customers.</p>
+            </div>
+            <div class="project">
+                <h3>Movie Search App</h3>
+                <p>- Utilizes a movie API for real-time data retrieval<br>
+                    - Allows users to search, retrieve, and explore movie information<br>
+                    - User-friendly interface presenting details like titles, ratings, etc.</p>
+            </div>
+            <div class="project">
+                <h3>Parking Management System</h3>
+                <p>- Built with C++ and QT Creator<br>
+                    - Sends alerts to users when parking space is insufficient<br>
+                    - Tracks and manages the number of parked cars in the system<br></p>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>- HTML, CSS, JS-based web application<br>
+                    - Uses a weather API for real-time weather data<br>
+                    - Provides user-specific weather information based on search queries
+                    .</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>Knowledge Gate</strong> - Subject Matter Expert (July 2023)</p>
+            <ul>
+                <li>Proficient in MS Office and Google Collaboration tools</li>
+                <li>Accomplished content creator with a focus on clarity and engagement</li>
+                <li>Guided students effectively by addressing technical doubts</li>
+                <li>Led various projects and fostered innovative environments</li>
+            </ul>
+        </section>
+
+
+        <section id="Certification">
+            <h2>Experience</h2>
+            <ul><li><p>Cybersecurity
+                Fundamentals
+                 Course
+                Completion <a href="ibmlearning.com"target="_blank">    IBM Learning</a>
+            </p></li></ul>
+            <ul><li><p> Scrum
+                 Fundamental<a href="Udemy.com "target="_blank"> Udemy</a>
+            </p></li></ul>
+            <ul><li><p>Python
+                 Programming <a href="Coursera.com"target="_blank">     Coursera</a>
+            </p></li></ul>
+            <ul><li><p>
+                 Basic Game Development <a href="Coursera.com"target="_blank">  Coursera</a>
+             </p>
+             </li></ul>
+             <ul><li><p>
+                 Artificial Intelligence in Web Design <a href="Udemy.com"target="_blank">   Udemy</a>
+             </p></li></ul>
+             <ul><li><p>
+                Agile Methodology Virtual Experience Program <a href="cognizant.com" target="_blank">   Cognizant</a>
+             </p></li></ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kapilkathait75@gmail.com">kapilkathait75@gmail.com</a></p>
+            <p>Phone: <a href="tel:7*******2">7%$&$&$&%2</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kapil-kathait-0269b7191/">Kapil Kathait</a></p>
+            <p>Github: <a href="https://www.github.com/kapilkathait">Kapil Kathait</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kapil Kathait. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    // JavaScript to handle dark mode toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('themeToggle');
+
+    themeToggle.addEventListener('click', () => {
+        // Toggle the 'dark-mode' class on the body
+        document.body.classList.toggle('dark-mode');
+
+        // Save user preference in local storage
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+    });
+
+    // Check for previously saved preference
+    const savedMode = localStorage.getItem('darkMode');
+    if (savedMode === 'enabled') {
+        document.body.classList.add('dark-mode');
+    }
+});
+</script>
+</html>
